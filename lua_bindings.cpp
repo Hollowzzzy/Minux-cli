@@ -1,4 +1,3 @@
-#include "lua_glue.h"
 #include "open.h"
 #include "delete.h"
 #include "create.h"
@@ -6,7 +5,6 @@
 #include "move.h"
 #include <string>
 
-// --- open ---
 static int l_read_file(lua_State* L) {
     const char* filename = luaL_checkstring(L, 1);
 
