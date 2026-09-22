@@ -1,5 +1,5 @@
 package = "minux"
-version = "0.1-1"
+version = "0.2-1"
 
 source = {
    url = "git+https://github.com/Hollowzzzy/Minux-cli",
