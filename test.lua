@@ -1,0 +1,13 @@
+local minux = require("minux")
+
+print("create_file:", minux.create_file("hello.txt", "Hello from Lua!"))
+print("read_file:  ", minux.read_file("hello.txt"))
+print("copy_file:  ", minux.copy_file("hello.txt", "hello2.txt"))
+print("read copy:  ", minux.read_file("hello2.txt"))
+print("create_folder:", minux.create_folder("luafolder"))
+print("move_file (into folder):", minux.move_file("hello2.txt", "luafolder/hello2.txt"))
+print("read moved: ", minux.read_file("luafolder/hello2.txt"))
+print("move_folder:", minux.move_folder("luafolder", "luafolder2"))
+print("delete_folder recursive:", minux.delete_folder("luafolder2", true))
+print("delete_file hello.txt:", minux.delete_file("hello.txt"))
+print("read after delete (should be nil):", minux.read_file("hello.txt"))
