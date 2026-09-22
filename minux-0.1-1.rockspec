@@ -3,7 +3,7 @@ version = "0.1-1"
 
 source = {
    url = "git+https://github.com/Hollowzzzy/Minux-cli",
-   tag = "main",
+   tag = "master",
 }
 
 description = {
